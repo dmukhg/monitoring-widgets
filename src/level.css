@@ -1,0 +1,37 @@
+.level-container {
+  font-family: arial, sans-serif;
+  color: #666666;
+}
+
+.level-leftDiv {
+  display: inline-block;
+  text-align: right;
+  margin-right: 15px;
+}
+
+.level-rightDiv {
+  display: inline-block;
+  text-align: left;
+}
+
+.level-value {
+  font-size: 50px;
+  text-align: right;
+  width: 2em;
+}
+
+.level-value .level-percentage {
+  font-size: 25px;
+}
+
+.level-label {
+  text-transform: uppercase;
+}
+
+.level-tower-block {
+  background-color: #dedede;
+  display: block;
+  width: 30px;
+  height: 15px;
+  margin-top: 1px;
+}

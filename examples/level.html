@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>Level Widget demo</title> 
+    <script src="../lib/jquery-ui-1.11.2/external/jquery/jquery.js"></script> 
+    <script src="../lib/jquery-ui-1.11.2/jquery-ui.js"></script>
+    <script src="../src/level.js"></script>
+
+    <link href="../lib/jquery-ui-1.11.2/jquery-ui.css" rel="stylesheet"/>
+    <link href="../src/level.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <h1>Example Level Widget</h1>
+    <div id="level-1"></div>
+
+    <script type="text/javascript">
+      // Invoke level plugin
+      var levelWidget = $('#level-1').level({value: 0, label: 'Capacity'});
+      setTimeout(function () {
+          levelWidget.level("value", 21);
+          setTimeout(function () {
+            levelWidget.level("value", 147);
+            setTimeout(function () {
+              levelWidget.level("value", 100);
+              setTimeout(function () {
+                levelWidget.level("value", 0);
+                }, 1000);
+              }, 1000);
+            }, 1000);
+          }, 1000);
+
+   </script>
+  </body>
+</html>
